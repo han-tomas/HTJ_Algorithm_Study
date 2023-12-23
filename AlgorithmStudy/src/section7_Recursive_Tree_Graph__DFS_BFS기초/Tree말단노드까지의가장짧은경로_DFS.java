@@ -12,7 +12,7 @@ public class Tree말단노드까지의가장짧은경로_DFS {
 	Node root;
 	public int DFS(int L, Node root) {
 		if (root.lt == null && root.rt == null) return L;
-		else return Math.min(DFS(L+1, root.lt), DFS(L+1, root.lt));
+		else return Math.min(DFS(L+1, root.lt), DFS(L+1, root.rt));
 	}
 	
 	
